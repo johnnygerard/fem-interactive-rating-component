@@ -10,6 +10,8 @@ body {
   font-weight: 400;
   line-height: normal;
 
+  background: var(--Very-Dark-Blue, #131518);
+
   // Center content for manual testing
   display: grid;
   place-items: center;
