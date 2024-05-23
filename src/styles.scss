@@ -17,6 +17,7 @@ body {
   place-items: center;
   min-height: 100vh;
 
+  min-width: min-content;
   padding: 24px;
 
   @include desktop {
