@@ -111,6 +111,9 @@ input[type="radio"] {
     font-size: 16px;
   }
 
+  @include color-transition;
+  @include background-color-transition;
+
   // Interaction states (order-sensitive)
   &:hover,
   &:has(:focus-visible) {
@@ -143,6 +146,8 @@ button[type="submit"] {
     font-size: 15px;
     letter-spacing: 2px;
   }
+
+  @include background-color-transition;
 
   // Interaction states
   &:is(:hover, :focus-visible):not(:disabled) {
