@@ -2,4 +2,141 @@
 
 :host {
   display: block;
+  border-radius: 15px;
+  padding: 0 24px;
+  width: 100%;
+  height: 360px;
+  background-image: radial-gradient(100% 100% at top, #232a34, #181e27);
+
+  @include desktop {
+    border-radius: 30px;
+    padding: 0 40px 0 32px;
+    width: 412px;
+    height: 416px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+app-svg-star-icon {
+  margin-top: 24px;
+
+  @include desktop {
+    margin-top: 32px;
+  }
+}
+
+.body {
+  color: #969fad;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include desktop {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.heading {
+  margin: 16px 0 10px;
+
+  // Typography
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+
+  @include desktop {
+    margin: 30px 0 7px;
+
+    // Typography
+    font-size: 28px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+  position: absolute;
+}
+
+.rating {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+
+    @include desktop {
+      margin: 24px 0 32px;
+    }
+  }
+
+  // Circle with centered single digit
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #262e38;
+  width: 42px;
+  height: 42px;
+
+  // Typography
+  color: #969fad;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+
+  @include desktop {
+    width: 51px;
+    height: 51px;
+
+    // Typography
+    font-size: 16px;
+  }
+
+  // Interaction states (order-sensitive)
+  &:hover,
+  &:has(:focus-visible) {
+    background-color: #fc7614;
+    color: #262e38;
+  }
+
+  &:has(:checked) {
+    background-color: #fff;
+    color: #262e38;
+  }
+  // End of interaction states
+}
+
+button[type="submit"] {
+  $height: 45px;
+
+  height: $height;
+  border-radius: calc($height / 2);
+  background-color: #fc7614;
+
+  // Typography
+  color: #131518;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.867px;
+
+  @include desktop {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  // Interaction states
+  &:is(:hover, :focus-visible):not(:disabled) {
+    background-color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }

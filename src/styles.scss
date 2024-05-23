@@ -10,10 +10,16 @@ body {
   font-weight: 400;
   line-height: normal;
 
-  background: var(--Very-Dark-Blue, #131518);
+  background-color: #131518;
 
-  // Center content for manual testing
+  // Center content
   display: grid;
   place-items: center;
   min-height: 100vh;
+
+  padding: 24px;
+
+  @include desktop {
+    padding: 40px 0;
+  }
 }
