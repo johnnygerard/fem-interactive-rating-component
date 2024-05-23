@@ -24,7 +24,6 @@ This is my solution to the [Interactive rating component challenge](https://www.
 
 <!-- ## Key Features -->
 
-
 ## Automated Tasks
 
 - Project initialization with shell script
