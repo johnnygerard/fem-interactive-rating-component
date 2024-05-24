@@ -2,14 +2,14 @@
 
 This is my solution to the [Interactive rating component challenge](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI) from [Frontend Mentor](https://www.frontendmentor.io/).
 
-[![project status](https://img.shields.io/badge/status-work%20in%20progress-red?style=for-the-badge)](https://fem-interactive-rating-component-jgerard.vercel.app)
+[![project status](https://img.shields.io/badge/status-solution%20published-success?style=for-the-badge)](https://www.frontendmentor.io/solutions/interactive-rating-component-with-angular-18-8yiOxFkmG7)
 
 ## Links
 
 - [Live website](https://fem-interactive-rating-component-jgerard.vercel.app)
-<!-- - [Solution](placeholder) -->
+- [Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-with-angular-18-8yiOxFkmG7)
 - [Challenge](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
-<!-- - [Lighthouse report](https://googlechrome.github.io/lighthouse/viewer/?gist=placeholder) -->
+- [Lighthouse report](https://googlechrome.github.io/lighthouse/viewer/?gist=435b28e5a1bcbc19fa0d1419223d6346)
 
 ## Tech Stack
 
