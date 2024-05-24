@@ -45,19 +45,10 @@ This is my solution to the [Interactive rating component challenge](https://www.
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=github.copilot) (active subscription required)
 
-<!-- ## Screenshots
+## Screenshots (Mobile)
 
-### Mobile
-
-![mobile screenshot](screenshots/mobile.avif)
-
-### Tablet
-
-![tablet screenshot](screenshots/tablet.avif)
-
-### Desktop
-
-![desktop screenshot](screenshots/desktop.avif) -->
+![mobile front screenshot](screenshots/mobile-front.png)
+![mobile back screenshot](screenshots/mobile-back.png)
 
 ## About Frontend Mentor
 
