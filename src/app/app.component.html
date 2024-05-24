@@ -1,1 +1,37 @@
-<h1>Deployment successful!</h1>
+@if (isSubmitted) {
+  <div class="submitted-container" @fadeIn>
+    <app-svg-online-payment-icon />
+    <hgroup>
+      <p class="overline">You selected {{ userRating() }} out of 5</p>
+      <h1 class="heading submitted text-center">Thank you!</h1>
+    </hgroup>
+    <p class="body text-center">
+      We appreciate you taking the time to give a rating. If you ever need more
+      support, don’t hesitate to get in touch!
+    </p>
+  </div>
+} @else {
+  <form (ngSubmit)="isSubmitted = true" #form="ngForm">
+    <app-svg-star-icon />
+    <h1 class="heading form">How did we do?</h1>
+    <p class="body">
+      Please let us know how we did with your support request. All feedback is
+      appreciated to help us improve our offering!
+    </p>
+    <div class="rating-container">
+      @for (rating of [1, 2, 3, 4, 5]; track $index) {
+        <label class="rating">
+          <input
+            type="radio"
+            name="rating"
+            required
+            [value]="rating"
+            [(ngModel)]="userRating"
+          />
+          <span>{{ rating }}</span>
+        </label>
+      }
+    </div>
+    <button type="submit" [disabled]="form.invalid">Submit</button>
+  </form>
+}

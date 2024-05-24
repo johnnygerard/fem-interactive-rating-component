@@ -1,1 +1,10 @@
 @forward "breakpoints";
+
+// Transitions
+@mixin color-transition {
+  transition: color 0.25s ease-in-out;
+}
+
+@mixin background-color-transition {
+  transition: background-color 0.25s ease-in-out;
+}

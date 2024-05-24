@@ -1,0 +1,19 @@
+@use "index" as *;
+
+:host {
+  display: block;
+}
+
+svg {
+  $size: 40px;
+
+  width: $size;
+  height: $size;
+
+  @include desktop {
+    $size: 48px;
+
+    width: $size;
+    height: $size;
+  }
+}

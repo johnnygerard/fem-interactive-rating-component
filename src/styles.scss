@@ -1,8 +1,26 @@
 @use "index" as *;
 
 body {
-  // Center content for manual testing
+  // Default font settings
+  font-family: "Overpass", sans-serif;
+  font-feature-settings:
+    "clig" off,
+    "liga" off;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  background-color: #131518;
+
+  // Center content
   display: grid;
   place-items: center;
   min-height: 100vh;
+
+  min-width: min-content;
+  padding: 24px;
+
+  @include desktop {
+    padding: 40px 0;
+  }
 }

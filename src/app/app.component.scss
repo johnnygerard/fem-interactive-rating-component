@@ -2,4 +2,192 @@
 
 :host {
   display: block;
+  border-radius: 15px;
+  padding: 0 24px;
+  width: 100%;
+  max-width: 412px;
+  min-width: 327px;
+  height: 360px;
+  background-image: radial-gradient(100% 100% at top, #232a34, #181e27);
+
+  @include desktop {
+    border-radius: 30px;
+    padding: 0 40px 0 32px;
+    width: 412px;
+    height: 416px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+app-svg-star-icon {
+  margin-top: 24px;
+
+  @include desktop {
+    margin-top: 32px;
+  }
+}
+
+.body {
+  color: #969fad;
+  font-size: 14px;
+  line-height: 22px;
+
+  @include desktop {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
+.heading {
+  // Typography
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+
+  &.form {
+    margin: 16px 0 10px;
+  }
+
+  &.submitted {
+    margin: 24px 0 10px;
+  }
+
+  @include desktop {
+    font-size: 28px;
+
+    &.form {
+      margin: 30px 0 7px;
+    }
+
+    &.submitted {
+      margin: 32px 0 7px;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+  position: absolute;
+}
+
+.rating {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+
+    @include desktop {
+      margin: 24px 0 32px;
+    }
+  }
+
+  // Circle with centered single digit
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #262e38;
+  width: 42px;
+  height: 42px;
+
+  // Typography
+  color: #969fad;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+
+  @include desktop {
+    width: 51px;
+    height: 51px;
+
+    // Typography
+    font-size: 16px;
+  }
+
+  @include color-transition;
+  @include background-color-transition;
+
+  // Interaction states (order-sensitive)
+  &:hover,
+  &:has(:focus-visible) {
+    background-color: #fc7614;
+    color: #262e38;
+  }
+
+  &:has(:checked) {
+    background-color: #fff;
+    color: #262e38;
+  }
+  // End of interaction states
+}
+
+button[type="submit"] {
+  $height: 45px;
+
+  height: $height;
+  border-radius: calc($height / 2);
+  background-color: #fc7614;
+
+  // Typography
+  color: #131518;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1.867px;
+
+  @include desktop {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
+  @include background-color-transition;
+
+  // Interaction states
+  &:is(:hover, :focus-visible):not(:disabled) {
+    background-color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.submitted-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+app-svg-online-payment-icon {
+  margin: 34px 0 24px;
+
+  @include desktop {
+    margin: 45px 0 32px;
+  }
+}
+
+.overline {
+  $height: 32px;
+
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  height: $height;
+  border-radius: calc($height / 2);
+  background: #262e38;
+
+  // Typography
+  color: #fc7614;
+  font-size: 14px;
+
+  @include desktop {
+    font-size: 15px;
+  }
 }
