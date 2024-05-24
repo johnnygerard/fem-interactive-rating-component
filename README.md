@@ -22,7 +22,11 @@ This is my solution to the [Interactive rating component challenge](https://www.
 
 - [Vercel](https://vercel.com/) (static hosting)
 
-<!-- ## Key Features -->
+## Key Features
+
+- Angular animations
+- [Model inputs](https://angular.dev/guide/signals/model) (preview)
+- [Built-in control flow](https://angular.dev/guide/templates/control-flow) (stable)
 
 ## Automated Tasks
 
@@ -42,7 +46,7 @@ This is my solution to the [Interactive rating component challenge](https://www.
 
 - [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=angular.ng-template)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) (not yet available for Angular v18, see https://github.com/angular-eslint/angular-eslint/pull/1830)
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=github.copilot) (active subscription required)
 
 ## Screenshots (Mobile)
